@@ -1,0 +1,75 @@
+# MihoIntroduction
+@back Futon_Room
+
+@char Miho.Smile pos:35
+Miho: О, это ты! Я уже думала, что Chie кого-то другого отправила.  
+@char Miho.Open
+Miho: Подожди... Дай угадаю. Она опять рассказала тебе про "тот вечер"?
+Miho: С неё станется. Наверное, она надеется, что ты смутишь меня своими вопросами.
+@char Miho.SmileBlush
+Miho: Но давай без долгих разговоров. Раз уж ты здесь, у меня есть к тебе просьба.  
+Miho: Мне нужно протестировать одну игру. Она немного... необычная. Хочешь попробовать?
+{username}: Конечно, что за игра?
+@char Miho.Smile
+Miho: Отличный настрой! Это игра на внимание и реакцию.  
+Miho: Представь: мы будем играть прямо здесь. Твоя задача — найти как можно больше одинаковых картинок.
+@set Quest="Поиграй с Miho в мини игру"
+Game: Вы получили задание: Поиграть с Miho в мини игру.
+@goto .AskMinigame
+
+# AskMinigame
+@back Futon_Room
+@char Miho.Smile pos:35
+Miho: Так что, ты готов?
+@choice "Мне точно интересно!" goto:.AcceptMinigame
+@choice "Эм... Нет, спасибо." goto:.DeclineMinigame
+@stop
+
+# AcceptMinigame
+@char Miho.Open
+Miho: Отлично! Тогда начнём. Только предупреждаю: игра очень сложная.
+@startMinigame
+@waitMinigameEnd
+@char Miho.Smile
+Miho: Вот это была игра! Ты справился, хотя было непросто.  
+Miho: Но мне нужно кое-что от тебя. В ванной комнате есть важный предмет — найди его.  
+Miho: Это важно для завершения нашей небольшой авантюры.
+@set Quest="Найди предмет в ванной"
+Game: Вы получили задание: Найти предмет в ванной.
+@hide Miho
+@goto Map.Map
+
+# DeclineMinigame
+@char Miho.Frown
+Miho: Ох... Ну ладно. Я думала, ты смелее.
+Miho: Если передумаешь, я всегда готова к игре.
+@hide Miho
+
+Game: Вы отказались от мини-игры. Возможно, Miho немного разочарована.
+@goto Map.Map
+
+# SearchMiho
+@back Futon_Room
+Game: Кажется здесь пусто. Никого нет.  
+Game: Стоит найти Chie, может она знает для чего нужен флакон?.  
+@set Quest="Покажи флакон Chie"
+Game: Вы получили задание: Показать флакон Chie.
+@goto Map.Map
+
+# EndSpeech
+@back Futon_Room
+
+@if FutureOnlineWife=="Miho"
+@char Miho.GymOpen pos:50
+Miho: Ну, я рада, что ты сделал правильный выбор.  
+Miho: Надеюсь, ты понимаешь, как мне теперь придётся с тобой обращаться. ;)
+
+@char Miho.GymSmileBlush
+Miho: И, кстати... Если вдруг соскучишься, помни: я всегда готова к новым испытаниям.  
+@stop
+@endif
+
+@char Miho.OpenBlush pos:50
+Miho: Ах, ты всё-таки вернулся? И что теперь, думаешь, я буду рада тебя видеть? 
+@hide Miho
+@goto Map.Map

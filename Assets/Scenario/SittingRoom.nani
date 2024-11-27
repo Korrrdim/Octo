@@ -1,0 +1,143 @@
+# ChieIntroduction
+@back Sitting_Room
+
+@char Chie.Smile pos:25
+Chie: Привет! Моё имя — Chie. Запомни, вдруг ещё пригодится.  
+Chie: Я тебя долго не задержу — лучше отправляйся в свою комнату. Там тебя уже ждёт Miho.  
+
+@char Chie.ClosedSmileBlush
+Chie: И, кстати... Передай ей, что я всё ещё помню тот вечер. ;)
+@choice "Какой ещё вечер?" goto:.AskEvening
+@choice "Даже не хочу знать." goto:.IgnoreEvening
+@stop
+
+# IgnoreEvening
+@char Chie.OpenFrownBlush
+Chie: Ну как хочешь... Тогда просто передай ей мои слова.
+@goto .TakeFirstChieQuest
+
+# AskEvening
+@char Chie.OpenBlush
+Chie: Ах, ты всё-таки спросил... Знаешь, в тот вечер мы с Miho решили немного развлечься.  
+Chie: Было очень... захватывающе. Даже не знаю, как это описать.
+
+@char Chie.ClosedSmileBlush
+Chie: Ладно, ладно, не буду мучить. Мы устроили маленький спор, кто сможет дольше продержаться под дождём без одежды.
+Chie: Miho тогда победила. Но кое-что мне так и не даёт покоя. 
+
+@choice "Что именно?" goto:.CuriousAboutRain
+@choice "Лучше не продолжай." goto:.SkipRainStory
+@stop
+
+# CuriousAboutRain
+@char Chie.OpenBlush
+Chie: Ну... это слишком личное. Но, если ты так настаиваешь, то, возможно, Miho тебе расскажет...
+Chie: Она точно не устоит перед твоими вопросами.
+@goto .TakeFirstChieQuest
+
+# SkipRainStory
+@char Chie.OpenFrownBlush
+Chie: Хм, как скучно... Ну ладно, держу в секрете. Но Miho всё равно будет рада тебя видеть.  
+Chie: Только не забудь передать ей мои слова, хорошо?
+@goto .TakeFirstChieQuest
+
+
+# TakeFirstChieQuest
+@hide Chie
+
+@showUI QuestUI
+@set Quest="Поговори с Miho"
+Game: Вы получили задание: Поговорить с Miho.
+@goto Map.Map
+@stop
+
+# SearchChie
+@back Sitting_Room
+@char Chie.Smile pos:25
+@char Miho.Smile look:left pos:75
+
+Game: Здесь вас уже ждут Chie и Miho.
+
+@char Chie.ClosedSmileBlush
+Chie: Ого, ты действительно принёс флакон!  
+Chie: Знаешь, это вещь очень ценная... Я уверена, что только я смогу использовать её по-настоящему правильно.  
+
+@set Quest=""
+@hideUI QuestUI
+
+@char Miho.OpenBlush
+Miho: Ха! Chie, да ты же даже не знаешь, что с ним делать.  
+Miho: Этот флакон заслуживает тонкого обращения. Я точно знаю, как выжать из него максимум... пользы.  
+
+@char Chie.OpenFrownBlush
+Chie: Ну конечно, Miho. А ты не думала, что твоя "тонкость" уже всех довела?  
+
+@char Miho.SmileBlush
+Miho: Зато мои методы всегда приносят результат, в отличие от твоих.  
+
+@char Chie.SmileBlush
+Chie: О, правда? Ну тогда, может, ты объяснишь, почему я чаще выигрываю?  
+
+@choice "Отдать флакон Chie" goto:.GiveToChie
+@choice "Отдать флакон Miho" goto:.GiveToMiho
+@choice "Оставить флакон себе" goto:.KeepTheBottle
+@stop
+
+# GiveToChie
+@char Chie.Smile
+Chie: Вот это правильное решение! Ты точно не пожалеешь.  
+Chie: Я обещаю использовать его так, как нужно.  
+
+@char Miho.FrownBlush
+Miho: Да, конечно. Chie, как всегда, умеет очаровывать... Но ты об этом пожалеешь, поверь.  
+
+Game: Вы решили отдать флакон Chie. 
+@set FutureOnlineWife="Chie" 
+@hide Miho
+@hide Chie
+@goto Map.Map
+
+# GiveToMiho
+@char Miho.Smile
+Miho: Спасибо за доверие! Я знала, что ты сделаешь правильный выбор.  
+Miho: Обещаю, ты узнаешь о результатах — и они будут потрясающими.  
+
+@char Chie.ClosedFrownBlush
+Chie: Эх... Почему мне всегда не везёт? Ладно, посмотрим, что Miho из этого сделает.  
+
+Game: Вы решили отдать флакон Miho.  
+@set FutureOnlineWife="Miho"
+@hide Miho
+@hide Chie
+@goto Map.Map
+
+# KeepTheBottle
+@char Chie.OpenBlush
+Chie: Что? Ты решил оставить его себе? Ну, это смело...  
+
+@char Miho.OpenBlush
+Miho: Ох, ты меня заинтриговал. Надеюсь, ты знаешь, как правильно обращаться с таким сокровищем.  
+
+Game: Вы решили оставить флакон себе.  
+@set FutureOnlineWife="Hand"
+@hide Miho
+@hide Chie
+@goto Map.Map
+
+# EndSpeech
+@back Sitting_Room
+
+@if FutureOnlineWife=="Chie"
+@char Chie.GymClosedSmile pos:50
+Chie: Ну что, приятно было провести время вместе?  
+Chie: Мне кажется, мы с тобой отлично подходим друг другу. Не забывай об этом. ;)
+@char Chie.GymSmileBlush
+Chie: А если захочешь ещё раз поиграть в судьбу — ты знаешь, где меня найти.  
+@stop
+@endif
+
+@char Chie.OpenFrownBlush pos:25
+Chie: Ну и зачем ты вернулся?  
+Chie: Неужели понял, что без меня тебе никуда? ;)
+@hide Chie
+@goto Map.Map

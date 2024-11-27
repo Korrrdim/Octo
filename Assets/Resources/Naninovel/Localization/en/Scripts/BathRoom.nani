@@ -1,0 +1,16 @@
+; English <en> to English <en> localization document for `BathRoom` naninovel script
+
+# 6d0dfeca
+; @choice  button:MapButtons/Perfume pos:-300,-200 handler:ButtonArea goto:.Perfume
+
+# abddbee
+; Game: Вы нашли флакон с таинственной жидкостью.  
+Game: You found a bottle with mysterious liquid.  
+
+# 1270d431
+; Game: Нужно найти Miho, она расскажет, что за жидкость.  
+Game: You need to find Miho; she will tell you about the liquid.  
+
+# d21cecb1
+; Game: Вы получили задание: Показать флакон Miho.
+Game: You received a quest: Show the bottle to Miho.

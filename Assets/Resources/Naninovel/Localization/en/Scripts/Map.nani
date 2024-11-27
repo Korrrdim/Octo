@@ -1,0 +1,10 @@
+; English <en> to English <en> localization document for `Map` naninovel script
+
+# d8540295
+; @choice  button:MapButtons/SittingRoom pos:-300,-200 handler:ButtonArea goto:.SittingRoom
+
+# ac49b18e
+; @choice  button:MapButtons/FutonRoom pos:300,-200 handler:ButtonArea goto:.FutonRoom
+
+# 31fbe357
+; @choice  button:MapButtons/BathRoom pos:0,250 handler:ButtonArea goto:.BathRoom

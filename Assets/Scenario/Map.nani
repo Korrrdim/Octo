@@ -1,0 +1,40 @@
+# Map
+@back Apartment_Exterior
+@hidePrinter 
+@choice  button:MapButtons/SittingRoom pos:-300,-200 handler:ButtonArea goto:.SittingRoom
+@choice  button:MapButtons/FutonRoom pos:300,-200 handler:ButtonArea goto:.FutonRoom
+@choice  button:MapButtons/BathRoom pos:0,250 handler:ButtonArea goto:.BathRoom
+@stop
+
+# SittingRoom
+@if Quest=="Покажи флакон Chie"
+@goto SittingRoom.SearchChie
+@endif
+@if Quest==""
+@goto SittingRoom.EndSpeech
+@endif
+@goto .Map
+
+# FutonRoom
+@if Quest=="Поговори с Miho"
+@goto FutonRoom.MihoIntroduction
+@endif
+
+@if Quest=="Поиграй с Miho в мини игру"
+@goto FutonRoom.AskMinigame
+@endif
+
+@if Quest=="Покажи флакон Miho"
+@goto FutonRoom.SearchMiho
+@endif
+
+@if Quest==""
+@goto FutonRoom.EndSpeech
+@endif
+@goto .Map
+
+# BathRoom
+@if Quest=="Найди предмет в ванной"
+@goto BathRoom
+@endif
+@goto .Map

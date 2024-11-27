@@ -1,0 +1,17 @@
+; English <en> to English <en> localization document for `Introduction` naninovel script
+
+# 58f11165
+; Game: Привет! Как тебя зовут?
+Game: Hello! What's your name?
+
+# 55f881a9
+; @input username summary:"Введите ваше имя."
+@input username summary:"Enter your name."
+
+# a4d7230a
+; {username}: Можешь называть меня {username}.
+{username}: You can call me {username}.
+
+# 2ae9345b
+; Game: Рад встрече, {username}.
+Game: Nice to meet you, {username}.

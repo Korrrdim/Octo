@@ -1,0 +1,177 @@
+; English <en> to English <en> localization document for `SittingRoom` naninovel script
+
+# 6a53a124
+; Chie: Привет! Моё имя — Chie. Запомни, вдруг ещё пригодится.  
+Chie: Hi! My name is Chie. Remember it, in case you need it later.  
+
+# e00dc917
+; Chie: Я тебя долго не задержу — лучше отправляйся в свою комнату. Там тебя уже ждёт Miho.  
+Chie: I won't keep you long — better go to your room. Miho's waiting for you there.  
+
+# 27bbf1b6
+; Chie: И, кстати... Передай ей, что я всё ещё помню тот вечер. ;)
+Chie: By the way... Tell her that I still remember that evening. ;)
+
+# ed1c9caf
+; @choice "Какой ещё вечер?" goto:.AskEvening
+@choice "What evening?" goto:.AskEvening
+
+# 8bf0828b
+; @choice "Даже не хочу знать." goto:.IgnoreEvening
+@choice "I don't even want to know." goto:.IgnoreEvening
+
+# edb92501
+; Chie: Ну как хочешь... Тогда просто передай ей мои слова.
+Chie: Well, if you say so... Then just tell her my words.
+
+# cfe5eb4c
+; Chie: Ах, ты всё-таки спросил... Знаешь, в тот вечер мы с Miho решили немного развлечься.  
+Chie: Ah, you asked after all... You know, that evening Miho and I decided to have a little fun.  
+
+# 31aedfc8
+; Chie: Было очень... захватывающе. Даже не знаю, как это описать.
+Chie: It was very... exciting. I don't even know how to describe it.
+
+# f2c65b3c
+; Chie: Ладно, ладно, не буду мучить. Мы устроили маленький спор, кто сможет дольше продержаться под дождём без одежды.
+Chie: Alright, alright, I won't torture you. We made a little bet on who could stay in the rain longer without clothes.
+
+# f6448b32
+; Chie: Miho тогда победила. Но кое-что мне так и не даёт покоя. 
+Chie: Miho won back then. But there's something that still bothers me. 
+
+# b60186f7
+; @choice "Что именно?" goto:.CuriousAboutRain
+@choice "What exactly?" goto:.CuriousAboutRain
+
+# 832fbf02
+; @choice "Лучше не продолжай." goto:.SkipRainStory
+@choice "Better not continue." goto:.SkipRainStory
+
+# e27fd48d
+; Chie: Ну... это слишком личное. Но, если ты так настаиваешь, то, возможно, Miho тебе расскажет...
+Chie: Well... it's too personal. But, if you're insisting, maybe Miho will tell you...
+
+# 4efb2c72
+; Chie: Она точно не устоит перед твоими вопросами.
+Chie: She won't resist your questions for sure.
+
+# 4f367afd
+; Chie: Хм, как скучно... Ну ладно, держу в секрете. Но Miho всё равно будет рада тебя видеть.  
+Chie: Hmm, how boring... Well, I'll keep it a secret. But Miho will still be happy to see you.  
+
+# 45550171
+; Chie: Только не забудь передать ей мои слова, хорошо?
+Chie: Just don't forget to tell her my words, okay?
+
+# 67dec5f5
+; Game: Вы получили задание: Поговорить с Miho.
+Game: You received the task: Talk to Miho.
+
+# 4e6153b9
+; Game: Здесь вас уже ждут Chie и Miho.
+Game: Chie and Miho are waiting for you here.
+
+# 14a6b323
+; Chie: Ого, ты действительно принёс флакон!  
+Chie: Wow, you really brought the vial!  
+
+# 2b258fb3
+; Chie: Знаешь, это вещь очень ценная... Я уверена, что только я смогу использовать её по-настоящему правильно.  
+Chie: You know, this is a very valuable thing... I'm sure only I can use it properly.  
+
+# f8640c5d
+; Miho: Ха! Chie, да ты же даже не знаешь, что с ним делать.  
+Miho: Ha! Chie, you don't even know what to do with it.  
+
+# 74100fcc
+; Miho: Этот флакон заслуживает тонкого обращения. Я точно знаю, как выжать из него максимум... пользы.  
+Miho: This vial deserves delicate handling. I know exactly how to extract the maximum... benefit from it.  
+
+# e6899623
+; Chie: Ну конечно, Miho. А ты не думала, что твоя "тонкость" уже всех довела?  
+Chie: Of course, Miho. But didn't you think your "delicacy" has already driven everyone crazy?  
+
+# 99652777
+; Miho: Зато мои методы всегда приносят результат, в отличие от твоих.  
+Miho: But my methods always bring results, unlike yours.  
+
+# d4fb2571
+; Chie: О, правда? Ну тогда, может, ты объяснишь, почему я чаще выигрываю?  
+Chie: Oh, really? Then maybe you'll explain why I win more often?  
+
+# b9b3c681
+; @choice "Отдать флакон Chie" goto:.GiveToChie
+@choice "Give the vial to Chie" goto:.GiveToChie
+
+# 1b23c5a5
+; @choice "Отдать флакон Miho" goto:.GiveToMiho
+@choice "Give the vial to Miho" goto:.GiveToMiho
+
+# ec6b83a9
+; @choice "Оставить флакон себе" goto:.KeepTheBottle
+@choice "Keep the vial for yourself" goto:.KeepTheBottle
+
+# 32c00c4a
+; Chie: Вот это правильное решение! Ты точно не пожалеешь.  
+Chie: That's the right choice! You won't regret it.  
+
+# 2ffe33b4
+; Chie: Я обещаю использовать его так, как нужно.  
+Chie: I promise I'll use it the right way.  
+
+# 3e2b12c4
+; Miho: Да, конечно. Chie, как всегда, умеет очаровывать... Но ты об этом пожалеешь, поверь.  
+Miho: Yeah, of course. Chie always knows how to charm... But you'll regret it, believe me.  
+
+# cb56c02
+; Game: Вы решили отдать флакон Chie. 
+Game: You decided to give the vial to Chie. 
+
+# 693f212c
+; Miho: Спасибо за доверие! Я знала, что ты сделаешь правильный выбор.  
+Miho: Thanks for your trust! I knew you'd make the right choice.  
+
+# ca68f89c
+; Miho: Обещаю, ты узнаешь о результатах — и они будут потрясающими.  
+Miho: I promise, you'll know the results — and they will be amazing.  
+
+# a8d6c7f3
+; Chie: Эх... Почему мне всегда не везёт? Ладно, посмотрим, что Miho из этого сделает.  
+Chie: Eh... Why does it never work out for me? Well, let's see what Miho does with it.  
+
+# f3074563
+; Game: Вы решили отдать флакон Miho.  
+Game: You decided to give the vial to Miho.  
+
+# 8c633556
+; Chie: Что? Ты решил оставить его себе? Ну, это смело...  
+Chie: What? You decided to keep it for yourself? Well, that's bold...  
+
+# e10e563a
+; Miho: Ох, ты меня заинтриговал. Надеюсь, ты знаешь, как правильно обращаться с таким сокровищем.  
+Miho: Oh, you've intrigued me. I hope you know how to handle such a treasure properly.  
+
+# e7fb7a57
+; Game: Вы решили оставить флакон себе.  
+Game: You decided to keep the vial for yourself.  
+
+# 4d415305
+; Chie: Ну что, приятно было провести время вместе?  
+Chie: Well, did you enjoy spending time together?  
+
+# b2c58e0e
+; Chie: Мне кажется, мы с тобой отлично подходим друг другу. Не забывай об этом. ;)
+Chie: I think we get along great. Don't forget about that. ;)
+
+# b978dd7f
+; Chie: А если захочешь ещё раз поиграть в судьбу — ты знаешь, где меня найти.  
+Chie: And if you ever want to play with fate again — you know where to find me.  
+
+# aa85a2fa
+; Chie: Ну и зачем ты вернулся?  
+Chie: So why did you come back?  
+
+# 4c32985e
+; Chie: Неужели понял, что без меня тебе никуда? ;)
+Chie: Did you realize you can't go anywhere without me? ;)

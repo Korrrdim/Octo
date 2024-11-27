@@ -1,0 +1,11 @@
+Game: Привет! Как тебя зовут?
+@hidePrinter
+@input username summary:"Введите ваше имя."
+@stop
+
+{username}: Можешь называть меня {username}.
+
+Game: Рад встрече, {username}.
+@hidePrinter
+
+@goto SittingRoom.ChieIntroduction

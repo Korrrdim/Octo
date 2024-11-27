@@ -1,0 +1,11 @@
+@back Bathroom
+@hidePrinter 
+@choice  button:MapButtons/Perfume pos:-300,-200 handler:ButtonArea goto:.Perfume
+@stop
+
+# Perfume
+Game: Вы нашли флакон с таинственной жидкостью.  
+Game: Нужно найти Miho, она расскажет, что за жидкость.  
+@set Quest="Покажи флакон Miho"
+Game: Вы получили задание: Показать флакон Miho.
+@goto Map.Map

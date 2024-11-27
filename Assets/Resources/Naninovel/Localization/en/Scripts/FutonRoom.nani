@@ -1,0 +1,109 @@
+; English <en> to English <en> localization document for `FutonRoom` naninovel script
+
+# 25cf249f
+; Miho: О, это ты! Я уже думала, что Chie кого-то другого отправила.  
+Miho: Oh, it's you! I thought Chie sent someone else.  
+
+# 10f4032
+; Miho: Подожди... Дай угадаю. Она опять рассказала тебе про "тот вечер"?
+Miho: Wait... Let me guess. She told you about "that evening" again?
+
+# ba77668c
+; Miho: С неё станется. Наверное, она надеется, что ты смутишь меня своими вопросами.
+Miho: Typical of her. She probably hopes you'll embarrass me with your questions.
+
+# a50b112e
+; Miho: Но давай без долгих разговоров. Раз уж ты здесь, у меня есть к тебе просьба.  
+Miho: But let's skip the small talk. Since you're here, I have a favor to ask.  
+
+# 52db92b8
+; Miho: Мне нужно протестировать одну игру. Она немного... необычная. Хочешь попробовать?
+Miho: I need to test a game. It's a bit... unusual. Want to try?
+
+# f71400bc
+; {username}: Конечно, что за игра?
+{username}: Sure, what's the game about?
+
+# 6125a859
+; Miho: Отличный настрой! Это игра на внимание и реакцию.  
+Miho: Great attitude! It's a game of attention and reaction.  
+
+# 9cbbf05b
+; Miho: Представь: мы будем играть прямо здесь. Твоя задача — найти как можно больше одинаковых картинок.
+Miho: Imagine: we'll play right here. Your task is to find as many matching images as you can.
+
+# 450a3311
+; Game: Вы получили задание: Поиграть с Miho в мини игру.
+Game: You received a quest: Play a mini-game with Miho.
+
+# 4d20180f
+; Miho: Так что, ты готов?
+Miho: So, are you ready?
+
+# 6d29d2b9
+; @choice "Мне точно интересно!" goto:.AcceptMinigame
+@choice "I'm definitely interested!" goto:.AcceptMinigame
+
+# c7142167
+; @choice "Эм... Нет, спасибо." goto:.DeclineMinigame
+@choice "Um... No, thanks." goto:.DeclineMinigame
+
+# 53dc561b
+; Miho: Отлично! Тогда начнём. Только предупреждаю: игра очень сложная.
+Miho: Great! Let's begin. Just a heads-up: the game is quite challenging.
+
+# 48b68562
+; Miho: Вот это была игра! Ты справился, хотя было непросто.  
+Miho: That was a game! You did it, though it wasn't easy.  
+
+# 407b25c1
+; Miho: Но мне нужно кое-что от тебя. В ванной комнате есть важный предмет — найди его.  
+Miho: But I need something from you. There's an important item in the bathroom—find it.  
+
+# 3ab47d53
+; Miho: Это важно для завершения нашей небольшой авантюры.
+Miho: It's important for completing our little adventure.
+
+# f863041a
+; Game: Вы получили задание: Найти предмет в ванной.
+Game: You received a quest: Find the item in the bathroom.
+
+# 8b05656f
+; Miho: Ох... Ну ладно. Я думала, ты смелее.
+Miho: Oh... Well. I thought you were braver.
+
+# b9508f86
+; Miho: Если передумаешь, я всегда готова к игре.
+Miho: If you change your mind, I'm always up for a game.
+
+# 4966f2ef
+; Game: Вы отказались от мини-игры. Возможно, Miho немного разочарована.
+Game: You refused the mini-game. Miho might be a bit disappointed.
+
+# acd61992
+; Game: Кажется здесь пусто. Никого нет.  
+Game: It seems empty here. Nobody's around.  
+
+# dfe2b630
+; Game: Стоит найти Chie, может она знает для чего нужен флакон?.  
+Game: You should find Chie; maybe she knows what the bottle is for?  
+
+# 7518e80f
+; Game: Вы получили задание: Показать флакон Chie.
+Game: You received a quest: Show the bottle to Chie.
+
+# 16396c57
+; Miho: Ну, я рада, что ты сделал правильный выбор.  
+Miho: Well, I'm glad you made the right choice.  
+
+# 8d08293b
+; Miho: Надеюсь, ты понимаешь, как мне теперь придётся с тобой обращаться. ;)
+Miho: I hope you realize how I'll have to treat you now. ;)
+
+# a0f20340
+; Miho: И, кстати... Если вдруг соскучишься, помни: я всегда готова к новым испытаниям.  
+Miho: And by the way... If you ever miss me, remember: I'm always ready for new challenges.  
+
+# b529ce83
+; Miho: Ах, ты всё-таки вернулся? И что теперь, думаешь, я буду рада тебя видеть? 
+Miho: Ah, you actually came back? And what now, do you think I'll be happy to see you? 
